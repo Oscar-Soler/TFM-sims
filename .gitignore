@@ -3,3 +3,8 @@
 **/*.log
 **/*.o
 **/*.png
+.DS_Store
+**/amrvac
+**/*.h
+**/*.mod
+**/makefile

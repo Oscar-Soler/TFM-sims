@@ -40,11 +40,11 @@ contains
       !print *, p_1/p_eq
     where (x(ixmin1:ixmax1,1) < 5.0d0)
         w(ixmin1:ixmax1,rho_)   = rho_1
-        w(ixmin1:ixmax1,mom(1)) = v_1
+        w(ixmin1:ixmax1,mom(1)) = v_1*rho_1
         w(ixmin1:ixmax1,p_)     = p_1
     elsewhere
         w(ixmin1:ixmax1,rho_)   = rho_eq
-        w(ixmin1:ixmax1,mom(1)) = v_0
+        w(ixmin1:ixmax1,mom(1)) = v_0*rho_eq
         w(ixmin1:ixmax1,p_)     = p_eq
     end where
     
