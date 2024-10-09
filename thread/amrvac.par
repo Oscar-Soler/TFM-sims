@@ -1,0 +1,51 @@
+!setup.pl -d=1
+
+ &filelist
+        base_filename='output/th_1d'  ! Base file name for dat/vtu output
+        saveprim=.true.
+        autoconvert=.true.
+	convert_type='vtuBCCmpi'
+/
+
+ &savelist
+        itsave(1,1)=0
+        itsave(1,2)=0
+        dtsave_log=0.05          ! For the log
+        dtsave_dat=0.05          ! For dat/vtu output
+ /
+
+ &stoplist
+        dtmin=1.0d-6
+        time_max=10.0d0
+ /
+
+ &methodlist
+        time_stepper=  'twostep'
+        flux_scheme=20*'tvdlf'
+        !limiter='cada3'
+ /
+
+ &boundlist
+        typeboundary_min1 = 3*'cont'
+        typeboundary_max1 = 3*'cont'
+ /
+
+ &meshlist
+        refine_criterion=3
+        refine_max_level=3
+        domain_nx1=2048
+        xprobmin1=0.0d0
+        xprobmax1=1.0d1
+        !iprob=1
+ /
+
+ &paramlist
+        !typecourant='maxsum'
+        dtpar = -1
+	courantpar=0.8d0
+        slowsteps=-1
+ /
+
+ &hd_list
+	hd_energy = .true.
+	hd_gamma = 1.67d0
