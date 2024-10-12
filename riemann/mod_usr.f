@@ -20,18 +20,12 @@ contains
     double precision, intent(in) :: x(ixGmin1:ixGmax1,1:ndim)
     double precision, intent(inout) :: w(ixGmin1:ixGmax1,1:nw)
     double precision :: M, rho_eq, v_0, v_eq, p_eq, rho_1, v_1, v_sh, p_1, M1,&
-      cs_0
-    double precision :: q_th, rho_th, x_th_ini, x_th_fin, x_sh
+        cs_0, x_c
 
-    M = 5.405405405405405d0
-    rho_eq = 1d0
-    p_eq = 1d0
+    !M = 2d0
+    rho_eq = 1.0d0
+    p_eq = 1.0d0
 
-    q_th = 100d0
-      x_th_ini = 17
-      x_th_fin = 23
-      x_sh = 11.25
-      
     !------------------------------------- Above parameters, below calculations
       
     p_1 = p_eq * ((2*hd_gamma)/(hd_gamma+1)*M**2 - (hd_gamma-1)/(hd_gamma+1))
@@ -39,27 +33,26 @@ contains
     M1 = sqrt( (2+(hd_gamma-1)*M**2) / (2*hd_gamma*M**2 - (hd_gamma-1)))
     cs_0 = sqrt(hd_gamma * p_eq / rho_eq)
     !v_eq = sqrt(hd_gamma * p_eq / rho_eq)
-    !v_0 = -M*cs_0
-    v_0 = 0
+    v_0 = -M*cs_0
     v_sh = v_0 + M*cs_0
     v_1 = rho_eq/rho_1 * (v_0-v_sh) + v_sh
       !print *, rho_1/rho_eq
       !print *, p_1/p_eq
-    rho_th = rho_eq * q_th
-      
-    where (x(ixmin1:ixmax1,1) < x_sh)
+    p_1 = 4
+    rho_1 = 3
+    v_0 = 0
+    v_1 = 0
+    x_c = 3.5
+    
+
+    where (x(ixmin1:ixmax1,1) < x_c)
         w(ixmin1:ixmax1,rho_)   = rho_1
         w(ixmin1:ixmax1,mom(1)) = v_1
         w(ixmin1:ixmax1,p_)     = p_1
-    elsewhere ((x(ixmin1:ixmax1,1) > x_th_ini) .and. (x(ixmin1:ixmax1,1) < x_th_fin))
-        w(ixmin1:ixmax1,rho_)   = rho_th
-        w(ixmin1:ixmax1,mom(1)) = v_0
-        w(ixmin1:ixmax1,p_)     = p_eq
     elsewhere
         w(ixmin1:ixmax1,rho_)   = rho_eq
         w(ixmin1:ixmax1,mom(1)) = v_0
         w(ixmin1:ixmax1,p_)     = p_eq
-     
     end where
     
     call hd_to_conserved(ixGmin1,ixGmax1,ixmin1,ixmax1,w,x)
