@@ -1,7 +1,7 @@
 !setup.pl -d=1
 
  &filelist
-        base_filename='output/riem_1d'  ! Base file name for dat/vtu output
+        base_filename='output/riem_vac_1d'  ! Base file name for dat/vtu output
         saveprim=.true.
         autoconvert=.true.
 	convert_type='vtuBCCmpi'
@@ -55,7 +55,7 @@
  &particles_list
 	physics_type_particles = 'advect'
 	num_particles = 4
-	ndefpayload = 3
+	ndefpayload = 1
         dtsave_particles = 0.0085
         write_individual = .true.
         write_ensemble = .true.        

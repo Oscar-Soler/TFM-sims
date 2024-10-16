@@ -27,8 +27,8 @@ contains
         cs_0, x_c
 
     !M = 2d0
-    rho_eq = 1.0d0
-    p_eq = 1.0d0
+    rho_eq = 3.0d-2
+    p_eq = 3.0d-2
 
     !------------------------------------- Above parameters, below calculations
       
