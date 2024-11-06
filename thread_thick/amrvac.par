@@ -16,7 +16,7 @@
 
  &stoplist
         dtmin=1.0d-6
-        time_max=35d0
+        time_max=45d0
  /
 
  &methodlist

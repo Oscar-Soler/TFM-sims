@@ -29,7 +29,7 @@ contains
 
     q_th = 100d0
       x_th_ini = 2
-      x_th_fin = 12
+      x_th_fin = 32
       x_sh = 0
       
     !------------------------------------- Above parameters, below calculations
