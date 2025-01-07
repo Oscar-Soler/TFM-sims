@@ -1,0 +1,81 @@
+!setup.pl -d=1
+
+ &filelist
+        base_filename='output/radiation_1d'  ! Base file name for dat/vtu output
+        saveprim=.true.
+        autoconvert=.false.
+	convert_type='vtuBCCmpi'
+/
+
+ &savelist
+        itsave(1,1)=0
+        itsave(1,2)=0
+        dtsave_log=5d-2          ! For the log
+        dtsave_dat=5d-2         ! For dat/vtu output
+ /
+
+ &stoplist
+        dtmin=1.0d-6
+        time_max=1d0
+ /
+
+ &methodlist
+        time_stepper=  'twostep'
+        flux_scheme=20*'tvdlf'
+        !limiter='cada3'
+ /
+
+ &boundlist
+        typeboundary_min1 = 3*'cont'
+        typeboundary_max1 = 3*'cont'
+ /
+
+ &meshlist
+        refine_criterion=3
+        refine_max_level=3
+        domain_nx1=4096
+        xprobmin1=-1.0d0
+        xprobmax1=9.0d0
+        !iprob=1
+ /
+
+ &paramlist
+        !typecourant='maxsum'
+        dtpar = -1
+	courantpar=0.8d0
+        slowsteps=-1
+ /
+
+ &hd_list
+	hd_energy = .true.
+	hd_gamma = 1.67d0
+!	hd_particles = .true.
+!	hd_thermal_conduction = .true.
+	hd_radiative_cooling = .true.
+ /
+
+ &sts_list
+	sts_dtpar = 0.8
+
+ /
+
+! &tc_list
+!	tc_saturate = .true. 
+!/
+
+&rc_list
+	coolcurve='MLcosmol'
+	coolmethod='exact'
+	ncool=4000
+	Tfix=.true.
+ /
+
+! &particles_list
+!        physics_type_particles = 'advect'
+!        num_particles = 15
+!        ndefpayload = 1
+!	nusrpayload = 1
+!        dtsave_particles = 1d-3
+!        write_individual = .true.
+!        write_ensemble = .false.
+! /
