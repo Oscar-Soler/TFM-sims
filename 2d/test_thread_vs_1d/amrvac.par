@@ -1,0 +1,84 @@
+!setup.pl -d=2
+
+ &filelist
+        base_filename='output/test_2d'  ! Base file name for dat/vtu output
+        saveprim=.true.
+        autoconvert=.false.
+	convert_type='vtuBCCmpi'
+/
+
+ &savelist
+        itsave(1,1)=0
+        itsave(1,2)=0
+        dtsave_log=0.1          ! For the log
+        dtsave_dat=0.1         ! For dat/vtu output
+ /
+
+ &stoplist
+        dtmin=1.0d-6
+        time_max=20d0
+ /
+
+ &methodlist
+        time_stepper=  'twostep'
+        flux_scheme=20*'tvdlf'
+        !limiter='cada3'
+ /
+
+ &boundlist
+        typeboundary_min1 = 4*'cont'
+        typeboundary_max1 = 4*'cont'
+	typeboundary_min2 = 4*'cont'
+        typeboundary_max2 = 4*'cont'
+ /
+
+ &meshlist
+        refine_criterion=3
+        refine_max_level=3
+        domain_nx1=512
+	domain_nx2=32
+        xprobmin1=-10.0d0
+        xprobmax1=90.0d0
+	xprobmin2=-3.0d0
+        xprobmax2=3.0d0
+ /
+
+ &paramlist
+        !typecourant='maxsum'
+        dtpar = -1
+	courantpar=0.8d0
+        slowsteps=-1
+ /
+
+ &hd_list
+	hd_energy = .true.
+	hd_gamma = 1.67d0
+!	hd_particles = .true.
+!	hd_thermal_conduction = .true.
+!	hd_radiative_cooling = .true.
+ /
+
+! &sts_list
+!	sts_dtpar = 0.8
+! /
+
+! &tc_list
+!	tc_saturate = .true. 
+! /
+
+!&rc_list
+!	coolcurve='MLcosmol'
+!	coolmethod='exact'
+!	ncool=4000
+!	Tfix=.true.
+! /
+
+! &particles_list
+!        physics_type_particles = 'advect'
+!        num_particles = 15
+!        ndefpayload = 1
+!	nusrpayload = 1
+!        dtsave_particles = 1d-3
+!        write_individual = .true.
+!        write_ensemble = .false.
+! /
