@@ -1,0 +1,26 @@
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ |         __  __ ____ ___        _    __  __ ______     ___    ____         |
+ |        |  \/  |  _ \_ _|      / \  |  \/  |  _ \ \   / / \  / ___|        |
+ |        | |\/| | |_) | |_____ / _ \ | |\/| | |_) \ \ / / _ \| |            |
+ |        | |  | |  __/| |_____/ ___ \| |  | |  _ < \ V / ___ \ |___         |
+ |        |_|  |_|_|  |___|   /_/   \_\_|  |_|_| \_\ \_/_/   \_\____|        |
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ Spitzer MHD: par:   0.21633973559351147       ,perp:    2.1685795904764041E-011
+ Combination of Colgan (2008) for high temperatures and
+ Dalgarno & McCray (1972), DM2, for low temperatures
+ Reading amrvac.par
+ ERROR for processor           0 :
+ Can't write to output directory (output/solar_atm_a)
+#################~ JOB EFFICIENCY REPORT ~##################
+# JobID:                   133901                          #
+# Cluster:                 dejar                           #
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+#    Unable to gather job information. The most likely     #
+#       cause is that it only lasted a few seconds.        #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# If your job has low CPU Efficiency or you have doubts    #
+# about setting up a job, do not hesitate and contact us:  #
+#                    res_support@iac.es                    #
+############################################################

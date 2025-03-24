@@ -1,0 +1,6 @@
+impulse start time = 100 s
+1/2 up, 0 flat, 1/2 down
+amplitude = -
+impulse duration = 100s
+
+Same but impulse A from 1e-1 increased to 10e-1

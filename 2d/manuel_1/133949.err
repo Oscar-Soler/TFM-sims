@@ -1,0 +1,3 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 133949.0 ON dejar CANCELLED AT 2025-02-14T11:45:40 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 133949 ON dejar CANCELLED AT 2025-02-14T11:45:40 DUE TO TIME LIMIT ***

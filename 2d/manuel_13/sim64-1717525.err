@@ -1,0 +1,12 @@
+unload openmpi/gnu/3.0.1 (PATH, MANPATH, LD_LIBRARY_PATH)
+unload nano/4.0/gnu (PATH, MANPATH, LD_LIBRARY_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME)
+load gnu/7.2.0 Set GNU compilers as MPI wrappers backend
+load openmpi/gnu/3.0.1 (PATH, MANPATH, LD_LIBRARY_PATH)
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 128.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

@@ -1,0 +1,81 @@
+!setup.pl -d=1
+
+ &filelist
+        base_filename='output/heating_1d'  ! Base file name for dat/vtu output
+        saveprim=.true.
+        autoconvert=.false.
+	convert_type='vtuBCCmpi'
+/
+
+ &savelist
+        itsave(1,1)=0
+        itsave(1,2)=0
+        dtsave_log=0.1d0          ! For the log
+        dtsave_dat= 0.11645083874411023  ! For dat/vtu output
+ /
+
+ &stoplist
+        dtmin=1.0d-9
+        time_max =  17.467625811616532
+ /
+
+ &methodlist
+        time_stepper=  'threestep'
+        flux_scheme=20*'hll'
+        limiter=20*'cada3'
+	small_pressure=1.0d-8
+        small_density=1.0d-14
+        fix_small_values=.true.
+	small_values_method = 'replace'
+ /
+
+ &boundlist
+        typeboundary_min1 = 3*'cont'
+        typeboundary_max1 = 3*'cont'
+ /
+
+ &meshlist
+        refine_criterion=3
+        refine_max_level=5
+	refine_threshold=20*0.2d0
+        derefine_ratio=20*0.15d0
+	block_nx1=12
+        domain_nx1 = 192
+	iprob=2
+        xprobmin1=-10.0d0
+        xprobmax1=10.0d0
+	ditregrid=3
+        !iprob=1
+ /
+
+ &paramlist
+        typecourant= 'minimum' !'maxsum'
+        !dtpar = -1
+	courantpar=0.1d0
+        !slowsteps=-1
+ /
+
+ &hd_list
+	hd_energy = .true.
+	hd_gamma = 1.67d0
+	!hd_particles = .true.
+!	hd_thermal_conduction = .true.
+ /
+
+! &tc_list
+!        tc_saturate=.false.
+!/
+
+!&sts_list
+!	sts_dtpar = 0.15	
+!/
+
+! &particles_list
+!        physics_type_particles = 'advect'
+!        num_particles = 15
+!        ndefpayload = 1
+!	nusrpayload = 1
+!        dtsave_particles = 0.1
+!        write_individual = .true.
+!        write_ensemble = .false.
+! /

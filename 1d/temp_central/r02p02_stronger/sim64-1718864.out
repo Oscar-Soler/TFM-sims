@@ -1,0 +1,64 @@
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ |         __  __ ____ ___        _    __  __ ______     ___    ____         |
+ |        |  \/  |  _ \_ _|      / \  |  \/  |  _ \ \   / / \  / ___|        |
+ |        | |\/| | |_) | |_____ / _ \ | |\/| | |_) \ \ / / _ \| |            |
+ |        | |  | |  __/| |_____/ ___ \| |  | |  _ < \ V / ___ \ |___         |
+ |        |_|  |_|_|  |___|   /_/   \_\_|  |_|_| \_\ \_/_/   \_\____|        |
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ Spitzer HD par:   0.21633973559351147     
+ Reading amrvac.par
+ 
+ Output type | tsavestart |  dtsave   | ditsave | itsave(1) | tsave(1)
+         log | 0.000E+00  | 0.100E+00 | ******  |      0    | *********
+      normal | 0.000E+00  | 0.233E+00 | ******  |      0    | *********
+       slice | 0.000E+00  | ********* | ******  | ******    | *********
+   collapsed | 0.000E+00  | ********* | ******  | ******    | *********
+    analysis | 0.000E+00  | ********* | ******  | ******    | *********
+ 
+         Domain size (cells): 384 
+                Level one dx: 0.115E+01 
+           Refine estimation: Lohner's scheme
+ Note, Grid is reconstructed once every           3 iterations
+           restart_from_file:  undefined
+                  converting: F
+
+ -------------------------------------------------------------------------------
+ Startup phase took :             2.474 sec
+ -------------------------------------------------------------------------------
+ Start integrating, print status every  3.00E+01 seconds
+   #        it        time          dt  wc-time(s)
+   #         0  0.0000E+00  8.8667E-04  2.9890E-03
+ Total timeloop took        :        5.959 sec
+ Time spent on AMR          :        3.728 sec
+                  Percentage:        62.57 %
+ Time spent on IO in loop   :        1.631 sec
+                  Percentage:        27.37 %
+ Time spent on ghost cells  :        0.242 sec
+                  Percentage:         4.06 %
+ Time spent on computing    :        0.358 sec
+                  Percentage:         6.00 %
+ Cells updated / proc / sec :    7.947E+03
+ Total time spent on IO     :        1.637 sec
+ Total timeintegration took :        5.965 sec
+   #      2599   9.316E+01   0.000E+00   5.959E+00
+ -------------------------------------------------------------------------------
+ Finished AMRVAC in :             8.439 sec
+ -------------------------------------------------------------------------------
+######################## JOB EFFICIENCY REPORT ########################
+# JobID:              1718864
+# Cluster:            lapalma3
+# User/Group:         can10010/can10
+# Cores:              64
+# Nodes:              4
+# CPU Utilized:       0.17 CPU-hours
+# Wall-clock time:    0 days 00:00:20
+# CPU Efficiency:     46.51 %
+# Memory Utilized:    0.00 GB
+# Memory Efficiency:  0.00 % of 108.80 GB
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# If your job has low CPU Efficiency or you have doubts about setting 
+# up a job, do not hesitate and contact us:
+#                          res_support@iac.es
+#######################################################################

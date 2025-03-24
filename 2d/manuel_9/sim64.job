@@ -1,0 +1,15 @@
+#!/bin/bash
+#############################
+#SBATCH -J sim64
+#SBATCH -n 64
+#SBATCH -t 12:30:00
+#SBATCH -o %x-%j.out
+#SBATCH -e %x-%j.err
+
+#SBATCH -D .
+#############################
+
+module purge
+module load gnu openmpi/gnu
+
+mpirun ./amrvac -i amrvac.par

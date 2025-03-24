@@ -1,0 +1,26 @@
+unload nano/4.0/gnu (PATH, MANPATH, LD_LIBRARY_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME)
+load gnu/7.2.0 Set GNU compilers as MPI wrappers backend
+load openmpi/gnu/3.0.1 (PATH, MANPATH, LD_LIBRARY_PATH)
+At line 2012 of file mod_input_output.f
+Fortran runtime error: Bad value during integer read
+
+Error termination. Backtrace:
+#0  0x2b742450026c in formatted_transfer_scalar_read
+	at ../../../libgfortran/io/transfer.c:1582
+#1  0x2b742450158c in formatted_transfer
+	at ../../../libgfortran/io/transfer.c:2270
+#2  0x577f3a in ???
+#3  0x50f3c9 in ???
+#4  0x403409 in ???
+#5  0x4032cc in ???
+#6  0x2b74250d86e4 in ???
+#7  0x403308 in ???
+	at ../sysdeps/x86_64/start.S:118
+#8  0xffffffffffffffff in ???
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[36191,1],0]
+  Exit code:    2
+--------------------------------------------------------------------------

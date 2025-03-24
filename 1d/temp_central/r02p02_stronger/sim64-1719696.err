@@ -1,0 +1,5 @@
+unload openmpi/gnu/3.0.1 (PATH, MANPATH, LD_LIBRARY_PATH)
+unload nano/4.0/gnu (PATH, MANPATH, LD_LIBRARY_PATH, C_INCLUDE_PATH, CPLUS_INCLUDE_PATH, PYTHONHOME)
+load gnu/7.2.0 Set GNU compilers as MPI wrappers backend
+load openmpi/gnu/3.0.1 (PATH, MANPATH, LD_LIBRARY_PATH)
+slurmstepd: error: *** JOB 1719696 ON s01r1b65 CANCELLED AT 2025-03-05T12:52:55 DUE TO TIME LIMIT ***

@@ -1,0 +1,4 @@
+impulse start time = 100 s
+1/2 up, 0 flat, 1/2 down
+amplitude = -
+impulse duration = 100s

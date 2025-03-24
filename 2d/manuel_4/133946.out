@@ -1,0 +1,44 @@
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ |         __  __ ____ ___        _    __  __ ______     ___    ____         |
+ |        |  \/  |  _ \_ _|      / \  |  \/  |  _ \ \   / / \  / ___|        |
+ |        | |\/| | |_) | |_____ / _ \ | |\/| | |_) \ \ / / _ \| |            |
+ |        | |  | |  __/| |_____/ ___ \| |  | |  _ < \ V / ___ \ |___         |
+ |        |_|  |_|_|  |___|   /_/   \_\_|  |_|_| \_\ \_/_/   \_\____|        |
+ -----------------------------------------------------------------------------
+ -----------------------------------------------------------------------------
+ Spitzer MHD: par:   0.21633973559351147       ,perp:    2.1685795904764041E-011
+ Combination of Colgan (2008) for high temperatures and
+ Dalgarno & McCray (1972), DM2, for low temperatures
+ Reading amrvac.par
+ 
+ Output type | tsavestart |  dtsave   | ditsave | itsave(1) | tsave(1)
+         log | 0.000E+00  | 0.100E+00 | ******  |      0    | *********
+      normal | 0.000E+00  | 0.200E+00 | ******  |      0    | *********
+       slice | 0.000E+00  | ********* | ******  | ******    | *********
+   collapsed | 0.000E+00  | ********* | ******  | ******    | *********
+    analysis | 0.000E+00  | ********* | ******  | ******    | *********
+ 
+         Domain size (cells): 96 48 
+                Level one dx: 0.208E+00 0.208E+00 
+           Refine estimation: Lohner's scheme
+ Note, Grid is reconstructed once every           3 iterations
+           restart_from_file:  output/solar_atm_a0129.dat
+                  converting: F
+
+ minra  0.10256244189917035     
+ rhob   7382.7014817162089     
+ pb   59.061613380997102     
+ ERROR for processor           0 :
+ output/solar_atm_a0129.dat not found!
+#################~ JOB EFFICIENCY REPORT ~##################
+# JobID:                   133946                          #
+# Cluster:                 dejar                           #
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!#
+#    Unable to gather job information. The most likely     #
+#       cause is that it only lasted a few seconds.        #
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+# If your job has low CPU Efficiency or you have doubts    #
+# about setting up a job, do not hesitate and contact us:  #
+#                    res_support@iac.es                    #
+############################################################

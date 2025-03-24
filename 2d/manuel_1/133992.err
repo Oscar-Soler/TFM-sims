@@ -1,0 +1,562 @@
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+At line 583 of file mod_input_output.f (unit = 9, file = 'amrvac.par')
+Fortran runtime error: namelist not terminated with / or &end
+
+Error termination. Backtrace:
+#0  0x7fe537966960 in ???
+#1  0x7fe5379674d9 in ???
+#2  0x7fe53796810f in ???
+#3  0x7fe537bb59b4 in ???
+#4  0x7fe537bbed6d in ???
+#5  0x7fe537bbf0e3 in ???
+#0  0x7f6960442960 in ???
+#6  0x5570aee7f401 in ???
+#7  0x5570aee06479 in ???
+#8  0x5570aed14a19 in ???
+#9  0x5570aed148ce in ???
+#0  0x7ff236b3c960 in ???
+#1  0x7ff236b3d4d9 in ???
+#0  0x7f3bd74a2960 in ???
+#1  0x7f3bd74a34d9 in ???
+#2  0x7f3bd74a410f in ???
+#10  0x7fe53753fd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7fe53753fe3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5570aed14904 in ???
+#13  0xffffffffffffffff in ???
+#0  0x7fdf8d03c960 in ???
+#1  0x7fdf8d03d4d9 in ???
+#2  0x7fdf8d03e10f in ???
+#3  0x7fdf8d28b9b4 in ???
+#4  0x7fdf8d294d6d in ???
+#5  0x7fdf8d2950e3 in ???
+#6  0x5604e0618401 in ???
+#7  0x5604e059f479 in ???
+#8  0x5604e04ada19 in ???
+#9  0x5604e04ad8ce in ???
+#2  0x7ff236b3e10f in ???
+#3  0x7ff236d8b9b4 in ???
+#4  0x7ff236d94d6d in ???
+#5  0x7ff236d950e3 in ???
+#6  0x55702a7da401 in ???
+#7  0x55702a761479 in ???
+#8  0x55702a66fa19 in ???
+#9  0x55702a66f8ce in ???
+#3  0x7f3bd76f19b4 in ???
+#4  0x7f3bd76fad6d in ???
+#5  0x7f3bd76fb0e3 in ???
+#6  0x5584195a8401 in ???
+#7  0x55841952f479 in ???
+#8  0x55841943da19 in ???
+#9  0x55841943d8ce in ???
+#0  0x7f93e9dab960 in ???
+#1  0x7f93e9dac4d9 in ???
+#2  0x7f93e9dad10f in ???
+#0  0x7f7165263960 in ???
+#1  0x7f71652644d9 in ???
+#2  0x7f716526510f in ???
+#0  0x7f3372e18960 in ???
+#1  0x7f3372e194d9 in ???
+#2  0x7f3372e1a10f in ???
+#3  0x7f33730679b4 in ???
+#4  0x7f3373070d6d in ???
+#5  0x7f33730710e3 in ???
+#6  0x5605767b6401 in ???
+#0  0x7fe2c6cb9960 in ???
+#1  0x7fe2c6cba4d9 in ???
+#2  0x7fe2c6cbb10f in ???
+#3  0x7fe2c6f089b4 in ???
+#4  0x7fe2c6f11d6d in ???
+#5  0x7fe2c6f120e3 in ???
+#6  0x56545fb13401 in ???
+#7  0x56545fa9a479 in ???
+#8  0x56545f9a8a19 in ???
+#9  0x56545f9a88ce in ???
+#0  0x7fc53cb2b960 in ???
+#1  0x7fc53cb2c4d9 in ???
+#2  0x7fc53cb2d10f in ???
+#3  0x7fc53cd7a9b4 in ???
+#4  0x7fc53cd83d6d in ???
+#5  0x7fc53cd840e3 in ???
+#6  0x5594e15b6401 in ???
+#7  0x5594e153d479 in ???
+#8  0x5594e144ba19 in ???
+#9  0x5594e144b8ce in ???
+#0  0x7ff1373f5960 in ???
+#1  0x7ff1373f64d9 in ???
+#2  0x7ff1373f710f in ???
+#3  0x7ff1376449b4 in ???
+#4  0x7ff13764dd6d in ???
+#5  0x7ff13764e0e3 in ???
+#6  0x55f503e50401 in ???
+#7  0x55f503dd7479 in ???
+#8  0x55f503ce5a19 in ???
+#9  0x55f503ce58ce in ???
+#0  0x7f489ed6d960 in ???
+#1  0x7f489ed6e4d9 in ???
+#2  0x7f489ed6f10f in ???
+#3  0x7f489efbc9b4 in ???
+#4  0x7f489efc5d6d in ???
+#5  0x7f489efc60e3 in ???
+#6  0x5643b06dd401 in ???
+#7  0x5643b0664479 in ???
+#8  0x5643b0572a19 in ???
+#9  0x5643b05728ce in ???
+#0  0x7ff03e035960 in ???
+#1  0x7ff03e0364d9 in ???
+#2  0x7ff03e03710f in ???
+#3  0x7ff03e2849b4 in ???
+#4  0x7ff03e28dd6d in ???
+#5  0x7ff03e28e0e3 in ???
+#6  0x55d8d60e7401 in ???
+#7  0x55d8d606e479 in ???
+#8  0x55d8d5f7ca19 in ???
+#9  0x55d8d5f7c8ce in ???
+#0  0x7f571f441960 in ???
+#1  0x7f571f4424d9 in ???
+#2  0x7f571f44310f in ???
+#3  0x7f571f6909b4 in ???
+#4  0x7f571f699d6d in ???
+#5  0x7f571f69a0e3 in ???
+#6  0x55f6ee52c401 in ???
+#7  0x55f6ee4b3479 in ???
+#8  0x55f6ee3c1a19 in ???
+#9  0x55f6ee3c18ce in ???
+#0  0x7f63df37a960 in ???
+#1  0x7f63df37b4d9 in ???
+#2  0x7f63df37c10f in ???
+#3  0x7f63df5c99b4 in ???
+#4  0x7f63df5d2d6d in ???
+#5  0x7f63df5d30e3 in ???
+#6  0x5560e4087401 in ???
+#7  0x5560e400e479 in ???
+#8  0x5560e3f1ca19 in ???
+#9  0x5560e3f1c8ce in ???
+#0  0x7f717c341960 in ???
+#1  0x7f717c3424d9 in ???
+#2  0x7f717c34310f in ???
+#3  0x7f717c5909b4 in ???
+#4  0x7f717c599d6d in ???
+#5  0x7f717c59a0e3 in ???
+#6  0x555e82033401 in ???
+#7  0x555e81fba479 in ???
+#8  0x555e81ec8a19 in ???
+#9  0x555e81ec88ce in ???
+#0  0x7faa9efd6960 in ???
+#1  0x7faa9efd74d9 in ???
+#2  0x7faa9efd810f in ???
+#3  0x7faa9f2259b4 in ???
+#4  0x7faa9f22ed6d in ???
+#5  0x7faa9f22f0e3 in ???
+#6  0x564f4acb0401 in ???
+#7  0x564f4ac37479 in ???
+#8  0x564f4ab45a19 in ???
+#9  0x564f4ab458ce in ???
+#0  0x7fa7587aa960 in ???
+#1  0x7fa7587ab4d9 in ???
+#2  0x7fa7587ac10f in ???
+#3  0x7fa7589f99b4 in ???
+#4  0x7fa758a02d6d in ???
+#5  0x7fa758a030e3 in ???
+#6  0x5616baf9a401 in ???
+#7  0x5616baf21479 in ???
+#8  0x5616bae2fa19 in ???
+#9  0x5616bae2f8ce in ???
+#0  0x7f3f94f34960 in ???
+#1  0x7f3f94f354d9 in ???
+#2  0x7f3f94f3610f in ???
+#3  0x7f3f951839b4 in ???
+#4  0x7f3f9518cd6d in ???
+#5  0x7f3f9518d0e3 in ???
+#6  0x55c1512b7401 in ???
+#7  0x55c15123e479 in ???
+#8  0x55c15114ca19 in ???
+#9  0x55c15114c8ce in ???
+#3  0x7f93e9ffa9b4 in ???
+#4  0x7f93ea003d6d in ???
+#5  0x7f93ea0040e3 in ???
+#6  0x55e0a324a401 in ???
+#7  0x55e0a31d1479 in ???
+#8  0x55e0a30dfa19 in ???
+#9  0x55e0a30df8ce in ???
+#3  0x7f71654b29b4 in ???
+#4  0x7f71654bbd6d in ???
+#5  0x7f71654bc0e3 in ???
+#6  0x55ca8e429401 in ???
+#7  0x55ca8e3b0479 in ???
+#8  0x55ca8e2bea19 in ???
+#9  0x55ca8e2be8ce in ???
+#0  0x7f6de5ae7960 in ???
+#1  0x7f6de5ae84d9 in ???
+#2  0x7f6de5ae910f in ???
+#3  0x7f6de5d369b4 in ???
+#4  0x7f6de5d3fd6d in ???
+#5  0x7f6de5d400e3 in ???
+#6  0x555c28350401 in ???
+#7  0x555c282d7479 in ???
+#8  0x555c281e5a19 in ???
+#9  0x555c281e58ce in ???
+#7  0x56057673d479 in ???
+#8  0x56057664ba19 in ???
+#9  0x56057664b8ce in ???
+#10  0x7f33729f1d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#0  0x7f376f3a7960 in ???
+#1  0x7f376f3a84d9 in ???
+#2  0x7f376f3a910f in ???
+#3  0x7f376f5f69b4 in ???
+#4  0x7f376f5ffd6d in ???
+#5  0x7f376f6000e3 in ???
+#6  0x5577dd661401 in ???
+#7  0x5577dd5e8479 in ???
+#8  0x5577dd4f6a19 in ???
+#9  0x5577dd4f68ce in ???
+#0  0x7ff798f4a960 in ???
+#1  0x7ff798f4b4d9 in ???
+#2  0x7ff798f4c10f in ???
+#3  0x7ff7991999b4 in ???
+#4  0x7ff7991a2d6d in ???
+#5  0x7ff7991a30e3 in ???
+#6  0x55d4dcb71401 in ???
+#7  0x55d4dcaf8479 in ???
+#8  0x55d4dca06a19 in ???
+#9  0x55d4dca068ce in ???
+#10  0x7ff798b23d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#0  0x7ff59a300960 in ???
+#1  0x7ff59a3014d9 in ???
+#2  0x7ff59a30210f in ???
+#3  0x7ff59a54f9b4 in ???
+#4  0x7ff59a558d6d in ???
+#5  0x7ff59a5590e3 in ???
+#6  0x56193f010401 in ???
+#7  0x56193ef97479 in ???
+#8  0x56193eea5a19 in ???
+#9  0x56193eea58ce in ???
+#10  0x7fdf8cc15d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7fdf8cc15e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5604e04ad904 in ???
+#13  0xffffffffffffffff in ???
+#0  0x7f2d66b12960 in ???
+#1  0x7f2d66b134d9 in ???
+#2  0x7f2d66b1410f in ???
+#3  0x7f2d66d619b4 in ???
+#4  0x7f2d66d6ad6d in ???
+#5  0x7f2d66d6b0e3 in ???
+#6  0x55e0c2436401 in ???
+#7  0x55e0c23bd479 in ???
+#8  0x55e0c22cba19 in ???
+#9  0x55e0c22cb8ce in ???
+#10  0x7f2d666ebd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x7ff236715d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7ff236715e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55702a66f904 in ???
+#13  0xffffffffffffffff in ???
+#0  0x7f31fea1d960 in ???
+#1  0x7f31fea1e4d9 in ???
+#2  0x7f31fea1f10f in ???
+#3  0x7f31fec6c9b4 in ???
+#4  0x7f31fec75d6d in ???
+#5  0x7f31fec760e3 in ???
+#6  0x557a5eea6401 in ???
+#7  0x557a5ee2d479 in ???
+#8  0x557a5ed3ba19 in ???
+#9  0x557a5ed3b8ce in ???
+#10  0x7f31fe5f6d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f31fe5f6e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x557a5ed3b904 in ???
+#13  0xffffffffffffffff in ???
+#0  0x7f3fd7000960 in ???
+#1  0x7f3fd70014d9 in ???
+#2  0x7f3fd700210f in ???
+#3  0x7f3fd724f9b4 in ???
+#4  0x7f3fd7258d6d in ???
+#5  0x7f3fd72590e3 in ???
+#6  0x55c9b1350401 in ???
+#7  0x55c9b12d7479 in ???
+#8  0x55c9b11e5a19 in ???
+#9  0x55c9b11e58ce in ???
+#10  0x7f3fd6bd9d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f3fd6bd9e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55c9b11e5904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f3bd707bd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f3bd707be3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55841943d904 in ???
+#13  0xffffffffffffffff in ???
+#0  0x7ff5e219c960 in ???
+#1  0x7ff5e219d4d9 in ???
+#2  0x7ff5e219e10f in ???
+#3  0x7ff5e23eb9b4 in ???
+#4  0x7ff5e23f4d6d in ???
+#5  0x7ff5e23f50e3 in ???
+#6  0x55f4910ff401 in ???
+#7  0x55f491086479 in ???
+#8  0x55f490f94a19 in ???
+#9  0x55f490f948ce in ???
+#10  0x7ff5e1d75d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7ff5e1d75e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55f490f94904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7faa9ebafd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7faa9ebafe3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x564f4ab45904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7fa758383d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7fa758383e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5616bae2f904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f3f94b0dd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f3f94b0de3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55c15114c904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f93e9984d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f93e9984e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55e0a30df904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f7164e3cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f7164e3ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55ca8e2be904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f6de56c0d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f6de56c0e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x555c281e5904 in ???
+#13  0xffffffffffffffff in ???
+#11  0x7f33729f1e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x56057664b904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f376ef80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f376ef80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5577dd4f6904 in ???
+#13  0xffffffffffffffff in ???
+#11  0x7ff798b23e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55d4dca06904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7fe2c6892d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7fe2c6892e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x56545f9a8904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7ff599ed9d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7ff599ed9e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x56193eea5904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7fc53c704d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7fc53c704e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5594e144b904 in ???
+#13  0xffffffffffffffff in ???
+#11  0x7f2d666ebe3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55e0c22cb904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7ff136fced8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7ff136fcee3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55f503ce5904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f489e946d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f489e946e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5643b0572904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7ff03dc0ed8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7ff03dc0ee3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55d8d5f7c904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f571f01ad8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f571f01ae3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55f6ee3c1904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f63def53d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f63def53e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x5560e3f1c904 in ???
+#13  0xffffffffffffffff in ???
+#10  0x7f717bf1ad8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f717bf1ae3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x555e81ec8904 in ???
+#13  0xffffffffffffffff in ???
+#0  0x7f2a2b8a5960 in ???
+#1  0x7f2a2b8a64d9 in ???
+#2  0x7f2a2b8a710f in ???
+#3  0x7f2a2baf49b4 in ???
+#4  0x7f2a2bafdd6d in ???
+#5  0x7f2a2bafe0e3 in ???
+#6  0x55b18d3bd401 in ???
+#7  0x55b18d344479 in ???
+#8  0x55b18d252a19 in ???
+#9  0x55b18d2528ce in ???
+#10  0x7f2a2b47ed8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f2a2b47ee3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x55b18d252904 in ???
+#13  0xffffffffffffffff in ???
+#1  0x7f69604434d9 in ???
+#2  0x7f696044410f in ???
+#3  0x7f69606919b4 in ???
+#4  0x7f696069ad6d in ???
+#5  0x7f696069b0e3 in ???
+#6  0x555c084f7401 in ???
+#7  0x555c0847e479 in ???
+#8  0x555c0838ca19 in ???
+#9  0x555c0838c8ce in ???
+#10  0x7f696001bd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#11  0x7f696001be3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#12  0x555c0838c904 in ???
+#13  0xffffffffffffffff in ???
+srun: error: dejar: tasks 0-27: Exited with exit code 2
+srun: Terminating StepId=133992.0

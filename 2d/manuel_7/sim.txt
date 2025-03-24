@@ -1,0 +1,4 @@
+impulse start time = 75
+1/4 up, 1/2 flat, 1/4 down
+amplitude = 20
+impulse duration = 10

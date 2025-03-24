@@ -1,0 +1,6 @@
+impulse info
+-beginning = 1
+-grow 1/4 stable 1/2 decrease 1/4
+
+-duration = 2
+-amplitude = 10
