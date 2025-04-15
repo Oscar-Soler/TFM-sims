@@ -1,0 +1,6 @@
+impulse start time = 10 s
+1/4 up, 1/2 flat, 1/4 down
+amplitude =
+	  lq0 = 20d0/heatunit
+	  sigma_heating=5d-5
+impulse duration = 100s

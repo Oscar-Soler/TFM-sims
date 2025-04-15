@@ -1,4 +1,3 @@
-
 !setup.pl -d=1
 
  &filelist
@@ -6,33 +5,30 @@
         saveprim=.true.
         autoconvert=.false.
 	convert_type='vtuBCCmpi'
-	restart_from_file='output/heating_1d1003.dat'
-	snapshotnext=1004
-/
- &init_cond_list
-	init_cond_file = 'init_cond_jump_tanh.txt'
+	!restart_from_file='output/heating_1d0051.dat'
+	!snapshotnext=52
 /
 
  &savelist
         itsave(1,1)=0
         itsave(1,2)=0
-        dtsave_log= 1.d-5          ! For the log
-        dtsave_dat= 1.d-5    ! For dat/vtu output
+        dtsave_log= 0.0003712923578163827!=10s          ! For the log
+        dtsave_dat= 0.0003712923578163827!=10s For dat/vtu output
  /
 
  &stoplist
-        dtmin=1.0d-14
-        time_max = 1.d-1
+        dtmin=1.0d-12
+        time_max = 0.1484 ! 0.03712923578163827
  /
 
  &methodlist
         time_stepper=  'threestep'
         flux_scheme=20*'tvdlf'
-        limiter=20*'cada3'
-	!small_pressure=1.0d-8
-        !small_density=1.0d-14
-        !fix_small_values=.true.
-	!small_values_method = 'error'
+        limiter=20*'minmod'
+	small_pressure=1.0d-8
+        small_density=1.0d-14
+        fix_small_values=.true.
+	small_values_method = 'error'
  /
 
  &boundlist
@@ -42,15 +38,15 @@
 
  &meshlist
         refine_criterion=3
-        refine_max_level=5
-	!refine_threshold=20*0.2d0
-        !derefine_ratio=20*0.15d0
-	!block_nx1=1
+        refine_max_level=4
+	refine_threshold=20*0.2d0
+        derefine_ratio=20*0.15d0
+	!block_nx1=12
         domain_nx1 = 2048
-	!iprob=2
-        xprobmin1=  0
-        xprobmax1=  0.03
-	!ditregrid=3
+	iprob=2
+        xprobmin1=-0.4d0
+        xprobmax1=0.4d0
+	ditregrid=3
         !iprob=1
  /
 
