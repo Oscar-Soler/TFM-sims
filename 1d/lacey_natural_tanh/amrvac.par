@@ -1,4 +1,6 @@
 
+
+
 !setup.pl -d=1
 
  &filelist
@@ -6,8 +8,8 @@
         saveprim=.true.
         autoconvert=.false.
 	convert_type='vtuBCCmpi'
-	restart_from_file='output/heating_1d1003.dat'
-	snapshotnext=1004
+	restart_from_file='output/heating_1d2325.dat'
+	snapshotnext=2326
 /
  &init_cond_list
 	init_cond_file = 'init_cond_jump_tanh.txt'
@@ -57,7 +59,7 @@
  &paramlist
         typecourant= 'minimum' !'maxsum'
         !dtpar = -1
-	courantpar=0.001d0
+	courantpar=0.0002d0
         !slowsteps=-1
  /
 

@@ -1,0 +1,8 @@
+impulse start time = 10
+1/4 up, 1/2 flat, 1/4 down
+amplitude = 30
+impulse duration = 1
+
+ending sim in time = 50 to analyze propagation of thermal shock only
+
+Doubled sigma_heating y 0.5->1

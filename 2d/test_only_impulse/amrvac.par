@@ -11,11 +11,9 @@
         base_filename='output/solar_atm_a'
         saveprim=.true.
         autoconvert=.false.
-!        convert_type='vtuBCCmpi'
-!        nwauxio=10 !10 con TRAC y 9 sin.
  
-        restart_from_file='output/solar_atm_a0368.dat'
-        snapshotnext=369
+        !restart_from_file='output/solar_atm_a0178.dat'
+        !snapshotnext=179
 / 
        convert=.true.
 
@@ -28,7 +26,7 @@
 
  &stoplist
         dtmin=1.D-7
-        time_max=100.1d0
+        time_max=20.1d0
  /
         it_max=300
         time_reset=.true.
@@ -37,31 +35,14 @@
         time_stepper=  'threestep'
         flux_scheme=    20*'hll'
         limiter= 20*'cada3'
-
-!!! esto viene del caso del jet con reconexión
-        ! time_stepper=  'threestep'
-        !   !time_integrator='ssprk4'
-        ! flux_scheme=    20*'tvdlf'
-        ! limiter= 20*'vanleer'
-        ! typesourcesplit= 'sfs'
-        ! dimsplit=T
-
-
         small_pressure=1.0d-8
         small_density=1.0d-14
         fix_small_values=.true.
  /
-        trace_small_values=.true.
 
  &boundlist
-        ! typeboundary_min1 = 'symm','symm','symm','symm','symm','symm','symm','symm'
-        ! typeboundary_max1 = 'symm','symm','symm','symm','symm','symm','symm','symm'
-          !buenas
         typeboundary_min1 = 'symm','symm','asymm','symm','symm','symm','asymm','symm'
         typeboundary_max1 = 'symm','symm','asymm','symm','symm','symm','asymm','symm'
-
-        ! typeboundary_min1 = 'symm','asymm','symm','asymm','symm','asymm','symm','asymm'
-        ! typeboundary_max1 = 'symm','asymm','symm','asymm','symm','asymm','symm','asymm'
         typeboundary_min2 = 8*'special'
         typeboundary_max2 = 8*'special'
  /
@@ -104,31 +85,19 @@
         mhd_eta=1.d-8
         mhd_trac=.true.
         mhd_trac_type=5
-	 mhd_trac_mask=1.0
+	mhd_trac_mask=1.0
         mhd_internal_e=.true.
  /
-        mhd_trac=.true.
-        mhd_internal_e=.true. !es mejor true para las condensaciones en campos intensos
 
  &tc_list
         tc_perpendicular=.false.
         tc_saturate=.true.
-        ! tc_saturate=.true. !MLB lo he cambiado de true a false
  /
 
  &rc_list
         ncool=12000
-        ! coolcurve='JCcorona'
-        !ncool=12000
         coolcurve='Colgan_DM'
         coolmethod='exact'
         Tfix=.true.
         tlow=0.008d0
  /
-!  &rc_list
-!        ncool=4000
-!        coolcurve='JCcorona'
-!        coolmethod='exact'
-!        cfrac=1.d0
-!        Tfix=.false.
-! /
