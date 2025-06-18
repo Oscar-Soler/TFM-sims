@@ -9,7 +9,7 @@ contains
 
     usr_init_one_grid => rm1d_init_one_grid
 
-    usr_create_particles => generate_particles
+    !usr_create_particles => generate_particles
 
     !usr_update_payload => update_payload_usr
 
@@ -77,8 +77,8 @@ subroutine generate_particles(n_particles, x, v, q, m, follow)
   follow(4) = .true.
 
   x(1,1) = -0.5d0
-  x(1,2) = -0.009d0
-  x(1,3) = 0.009d0
+  x(1,2) = -0.003d0
+  x(1,3) = 0.003d0
   x(1,4) = 0.5d0
 end subroutine generate_particles
 

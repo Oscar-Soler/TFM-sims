@@ -1,4 +1,4 @@
- module mod_usr
+module mod_usr 
   use mod_hd
 
   implicit none
@@ -8,10 +8,6 @@ contains
   subroutine usr_init()
 
     usr_init_one_grid => rm1d_init_one_grid
-
-    usr_create_particles => generate_particles
-
-    !usr_update_payload => update_payload_usr
 
     call set_coordinate_system("Cartesian")
     call hd_activate()
@@ -24,12 +20,18 @@ contains
     double precision, intent(in) :: x(ixGmin1:ixGmax1,1:ndim)
     double precision, intent(inout) :: w(ixGmin1:ixGmax1,1:nw)
     double precision :: M, rho_eq, v_0, v_eq, p_eq, rho_1, v_1, v_sh, p_1, M1,&
-        cs_0, x_c
+      cs_0
+    double precision :: q_th, rho_th, x_th_ini, x_th_fin, x_sh
 
-    !M = 2d0
-    rho_eq = 1.0d0
-    p_eq = 1.0d0
+    M = 5.405405405405405d0
+    rho_eq = 1d0
+    p_eq = 1d0
 
+    q_th = 100d0
+      x_th_ini = 2
+      x_th_fin = 32
+      x_sh = 0
+      
     !------------------------------------- Above parameters, below calculations
       
     p_1 = p_eq * ((2*hd_gamma)/(hd_gamma+1)*M**2 - (hd_gamma-1)/(hd_gamma+1))
@@ -37,58 +39,31 @@ contains
     M1 = sqrt( (2+(hd_gamma-1)*M**2) / (2*hd_gamma*M**2 - (hd_gamma-1)))
     cs_0 = sqrt(hd_gamma * p_eq / rho_eq)
     !v_eq = sqrt(hd_gamma * p_eq / rho_eq)
-    v_0 = -M*cs_0
+    !v_0 = -M*cs_0
+    v_0 = 0
     v_sh = v_0 + M*cs_0
     v_1 = rho_eq/rho_1 * (v_0-v_sh) + v_sh
       !print *, rho_1/rho_eq
       !print *, p_1/p_eq
-    p_1 = 4
-    rho_1 = 3
-    v_0 = 0
-    v_1 = 0
-    x_c = 0
-    
-
-    where (x(ixmin1:ixmax1,1) < x_c)
+    rho_th = rho_eq * q_th
+      
+    where (x(ixmin1:ixmax1,1) < x_sh)
         w(ixmin1:ixmax1,rho_)   = rho_1
         w(ixmin1:ixmax1,mom(1)) = v_1
         w(ixmin1:ixmax1,p_)     = p_1
+    elsewhere ((x(ixmin1:ixmax1,1) > x_th_ini) .and. (x(ixmin1:ixmax1,1) < x_th_fin))
+        w(ixmin1:ixmax1,rho_)   = rho_th
+        w(ixmin1:ixmax1,mom(1)) = v_0
+        w(ixmin1:ixmax1,p_)     = p_eq
     elsewhere
         w(ixmin1:ixmax1,rho_)   = rho_eq
         w(ixmin1:ixmax1,mom(1)) = v_0
         w(ixmin1:ixmax1,p_)     = p_eq
+     
     end where
     
     call hd_to_conserved(ixGmin1,ixGmax1,ixmin1,ixmax1,w,x)
 
   end subroutine rm1d_init_one_grid
-
-subroutine generate_particles(n_particles, x, v, q, m, follow)
-  integer, intent(in)           :: n_particles
-  double precision, intent(out) :: x(3, n_particles)
-  double precision, intent(out) :: v(3, n_particles)
-  double precision, intent(out) :: q(n_particles)
-  double precision, intent(out) :: m(n_particles)
-  logical, intent(out)          :: follow(n_particles)
-  
-  follow(1) = .true.
-  follow(2) = .true.
-  follow(3) = .true.
-  follow(4) = .true.
-
-  x(1,1) = -0.5d0
-  x(1,2) = -0.009d0
-  x(1,3) = 0.009d0
-  x(1,4) = 0.5d0
-end subroutine generate_particles
-
-!subroutine update_payload_usr(igrid,w,wold,xgrid,x,u,q,m,mypayload,mynpayload,particle_time)
-!  use mod_global_parameters
-!  integer, intent(in)           :: igrid,mynpayload
-!  double precision, intent(in)  :: w(ixGmin1:ixGmax1,1:nw),wold(ixGmin1:ixGmax1,1:nw)
-!  double precision, intent(in)  :: xgrid(ixGmin1:ixGmax1,1:ndim),x(1:ndir),u(1:ndir),q,m,particle_time
-!  double precision, intent(out) :: mypayload(mynpayload)
-!mypayload(1) = w(igrid,p_)
-!end subroutine update_payload_usr
 
 end module mod_usr

@@ -1,7 +1,7 @@
 !setup.pl -d=1
 
  &filelist
-        base_filename='output_3/riem_1d'  ! Base file name for dat/vtu output
+        base_filename='output/th_longer_1d'  ! Base file name for dat/vtu output
         saveprim=.true.
         autoconvert=.false.
 	!convert_type='vtuBCCmpi'
@@ -10,13 +10,13 @@
  &savelist
         itsave(1,1)=0
         itsave(1,2)=0
-        dtsave_log=0.0085d0          ! For the log
-        dtsave_dat=0.0085d0          ! For dat/vtu output
+        dtsave_log=1d0          ! For the log
+        dtsave_dat=1d0          ! For dat/vtu output
  /
 
  &stoplist
         dtmin=1.0d-6
-        time_max=0.85d0
+        time_max=200d0
  /
 
  &methodlist
@@ -33,9 +33,9 @@
  &meshlist
         refine_criterion=3
         refine_max_level=3
-        domain_nx1=2048
-        xprobmin1=-1.50d0
-        xprobmax1=1.50d0
+        domain_nx1=4096
+        xprobmin1=-600.0d0
+        xprobmax1=600.0d0
         !iprob=1
  /
 
@@ -49,14 +49,4 @@
  &hd_list
 	hd_energy = .true.
 	hd_gamma = 1.67d0
-        hd_particles = .true.
- /
-
- &particles_list
-	physics_type_particles = 'advect'
-	num_particles = 4
-	ndefpayload = 3
-        dtsave_particles = 0.0085
-        write_individual = .true.
-        write_ensemble = .true.        
- /
+/
